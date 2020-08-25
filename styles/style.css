@@ -3,6 +3,20 @@ body{
 	font-size: 12px;
 	background: #f9f9f9;
 }
+a {
+	color: #E0AB26;
+	text-decoration: none;
+	line-height: 1.15;
+}
+p{
+	margin: 0;
+	line-height: 1.15;
+}
+hr {
+    width: 90%;
+    margin: 25px auto;
+    border: 1px #cecece solid;
+}
 h1 {
     font-size: 3em;
     color: #675A85;
@@ -30,19 +44,26 @@ h3{
     padding: 0;
 }
 #nav li {
-    background: #fff;
-    padding: 10px 20px;
     list-style: none;
-    margin: 5px 0;
 }
 #nav li a {
     color: #000;
     text-decoration: none;
     font-size: 1.5em;
     font-weight: bold;
+    display: block;
+    background: #fff;
+    padding: 10px;
+    margin: 5px auto;
 }
 #banner {
     text-align: center;
+}
+#bannerRight{
+	padding: 25px 0;
+}
+#bannerRight p{
+	font-size: 1.5em;
 }
 #bannerLeft img {
     width: 100%;
@@ -66,5 +87,20 @@ h3{
     max-width: 300px;
 }
 #contact {
+    padding: 25px 0;
+}
+#footMain {
     text-align: center;
+}
+#footAlt p{
+	float: left;
+	width: 50%;
+	text-align: left;
+	font-weight: bold;
+}
+#footAlt a{
+	float: right;
+	width: 50%;
+	text-align: right;
+	font-weight: bold;
 }
