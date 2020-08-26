@@ -40,11 +40,17 @@ h3{
 }
 
 /*header*/
+#home {
+    margin: 25px 0;
+}
 #logo, #nav{
 	display: block;
 	margin: 0 auto;
 	text-align: center;
 	padding: 0;
+}
+#logo h1{
+	margin: 0;
 }
 #nav li {
 	list-style: none;
@@ -72,22 +78,19 @@ h3{
 }
 #bannerLeft img {
 	width: 100%;
-	max-width: 300px;
+	max-width: 400px;
 }
 
 /*body*/
 #portfolio {
 	text-align: center;
 }
-.card{
+.card {
 	width: 70%;
 	max-width: 700px;
-	margin: 0 auto;
+	margin: 5px auto;
 	background: #fff;
-	padding: 25px;
-}
-.card + .card{
-	margin-top:25px;
+	padding: 3%;
 }
 .card img {
 	width: 100%;
@@ -107,11 +110,15 @@ h3{
 	text-align: left;
 	font-weight: bold;
 }
-#footAlt a{
+#top {
 	float: right;
 	width: 50%;
 	text-align: right;
 	font-weight: bold;
+	display: inline-block;
+}
+#footNav{
+	display: none;
 }
 
 /*resizing*/
@@ -127,6 +134,44 @@ h3{
 	}
 	#nav li a {
 		display: inline-block;
+	}
+	#bannerLeft, #bannerRight{
+		float: left;
+		width: 50%;
+	}
+	.card {
+		float: left;
+		width: 42%;
+		margin: 5px 1%;
+	}
+	#top{
+		display: none;
+	}
+	#footNav {
+		display: inline-block;
+		padding: 0;
+		margin: 0;
+		float: right;
+	}
+	#footNav li {
+		list-style: none;
+		display: inline-block;
+		padding: 0 15px;
+	}
+}
+
+@media (min-width: 1024px) {
+	#logo{
+		float: left;
+		width: 33%
+	}
+	#nav{
+		float: right;
+		width: 67%;
+		text-align: right;
+	}
+	.card{
+		width: 25%;
 	}
 }
 
