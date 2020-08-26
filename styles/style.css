@@ -96,6 +96,23 @@ h3{
 	width: 100%;
 	max-width: 300px;
 }
+#skills{
+	text-align: center;
+}
+#skills ul{
+	margin: 0;
+	padding: 0;
+}
+#skills li{
+	color: #000;
+	text-decoration: none;
+	font-size: 1.5em;
+	font-weight: bold;
+	display: block;
+	background: #fff;
+	padding: 10px 25px;
+	margin: 5px;
+}
 
 /*footer*/
 #contact {
@@ -143,6 +160,9 @@ h3{
 		float: left;
 		width: 42%;
 		margin: 5px 1%;
+	}
+	#skills li{
+		display: inline-block;
 	}
 	#top{
 		display: none;
