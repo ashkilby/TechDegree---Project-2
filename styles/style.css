@@ -1,3 +1,4 @@
+/*basics*/
 body{
 	font-family: "Mulish", sans-serif;
 	font-size: 12px;
@@ -13,51 +14,55 @@ p{
 	line-height: 1.15;
 }
 hr {
-    width: 90%;
-    margin: 25px auto;
-    border: 1px #cecece solid;
+	width: 90%;
+	margin: 25px auto;
+	border: 1px #cecece solid;
 }
 h1 {
-    font-size: 3em;
-    color: #675A85;
-    font-family: 'Copse', serif;
+	font-size: 3em;
+	color: #675A85;
+	font-family: 'Copse', serif;
 }
 h2{
 	font-size: 2em;
 	color: #63B879;
-    font-family: 'Copse', serif;
+	font-family: 'Copse', serif;
 }
 h3{
 	font-size: 1.5em;
 	color: #36ACD0;
-    font-family: 'Copse', serif;
+	font-family: 'Copse', serif;
 }
 .container{
 	max-width: 1000px;
 	margin: 0 auto;
 	padding: 15px;
 }
+
+/*header*/
 #logo, #nav{
 	display: block;
 	margin: 0 auto;
 	text-align: center;
-    padding: 0;
+	padding: 0;
 }
 #nav li {
-    list-style: none;
+	list-style: none;
 }
 #nav li a {
-    color: #000;
-    text-decoration: none;
-    font-size: 1.5em;
-    font-weight: bold;
-    display: block;
-    background: #fff;
-    padding: 10px;
-    margin: 5px auto;
+	color: #000;
+	text-decoration: none;
+	font-size: 1.5em;
+	font-weight: bold;
+	display: block;
+	background: #fff;
+	padding: 10px 25px;
+	margin: 5px;
 }
+
+/*banner*/
 #banner {
-    text-align: center;
+	text-align: center;
 }
 #bannerRight{
 	padding: 25px 0;
@@ -66,11 +71,13 @@ h3{
 	font-size: 1.5em;
 }
 #bannerLeft img {
-    width: 100%;
-    max-width: 300px;
+	width: 100%;
+	max-width: 300px;
 }
+
+/*body*/
 #portfolio {
-    text-align: center;
+	text-align: center;
 }
 .card{
 	width: 70%;
@@ -84,13 +91,15 @@ h3{
 }
 .card img {
 	width: 100%;
-    max-width: 300px;
+	max-width: 300px;
 }
+
+/*footer*/
 #contact {
-    padding: 25px 0;
+	padding: 25px 0;
 }
 #footMain {
-    text-align: center;
+	text-align: center;
 }
 #footAlt p{
 	float: left;
@@ -104,3 +113,23 @@ h3{
 	text-align: right;
 	font-weight: bold;
 }
+
+/*resizing*/
+
+@media (min-width: 769px) {
+	.clearFix:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	#nav li{
+		display: inline-block;
+	}
+	#nav li a {
+		display: inline-block;
+	}
+}
+
+
+
+
